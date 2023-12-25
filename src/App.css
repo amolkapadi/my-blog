@@ -1,0 +1,172 @@
+.navbar-brand {
+  font-weight: 700;
+  font-size: 32px;
+  color: white;
+}
+.navbar-brand:hover{
+  color: rgb(232, 227, 227);
+}
+
+.nav-link {
+  font-size: 18px;
+  color: white;
+  padding: 18px;
+}
+.nav-link:hover{
+  color: rgb(232, 227, 227);
+}
+
+
+.bg-footer {
+  background: #3268E6 !important;
+}
+
+.container-fluid {
+  display: flex;
+  background: #3268E6;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 100vh !important;
+}
+.offcanvas-header{
+  background: #3268E6;
+}
+.offcanvas-body{
+  background: #3268E6;
+
+}
+.btn-close{
+  background-color: white !important;
+}
+.navbar-toggler-icon {
+
+  background: white !important;
+}
+.navbar-toggler{
+  padding: 0px !important;
+}
+.centered-content {
+  text-align: center;
+}
+
+.main-title {
+  font-weight: 300;
+  font-size: 58px;
+}
+
+.main-subtitle {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+@media (max-width: 768px) {
+
+  /* Adjust for mobile devices */
+  .centered-content, .w-75 {
+    width: 100% !important;
+    /* Full width on smaller screens */
+  }
+}
+
+
+
+/***navbar end***/
+
+/***slider**/
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-skill{
+  border: none !important;
+}
+.card{
+  border: none !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+/**introduction***/
+.btn-1{
+ padding-bottom: 20px;
+}
+.button:link, .button:visited{
+  /* position: relative; */
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 100px;
+  padding: 15px 40px;
+  transition: all 0.2s;
+} 
+.button-blue{
+  background-color: #ff1616;
+  color: #fff;
+}
+.button:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.button:active{
+  transform: translateY(-1px);
+}
+.button::after{
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 100px;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.button-blue::after{
+  background-color: #ff1616;
+}
+.button:hover::after{
+  transform: scale(1.4, 1.6);
+  opacity: 0;
+}
+/***/
+.card-img-top{
+  border-radius: 0px !important;
+}
+.card-body {
+  position: relative; /* Ensure positioning context for pseudo-element */
+}
+
+/* Vertical line styling */
+.card-body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0; /* Position the line on the left side */
+  width: 5px; /* Adjust width of the line */
+  background-color: #3268E6; /* Change color as needed */
+}
+/***footer**/
+.footer{
+  background-color: black;
+}
